@@ -19,10 +19,10 @@ tags = ("@RegressionTest"),
 plugin = {"pretty", "html:Reports/limeroad.html", "json:Reports/limeroad.json",
 		"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"})
 public class LimeRoadRunner extends BaseClass {
-//	public static WebDriver driver;
-//	@BeforeClass
-//	public static void basicStep() {
-//		driver=browserLaunch("Chrome");
-//		implicitWait(10);
-//	}		
+	public static WebDriver driver;
+	@BeforeClass
+	public static void basicStep() {
+		driver=browserLaunch("Chrome");
+		implicitWait(10);
+	}		
 }

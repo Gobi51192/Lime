@@ -12,7 +12,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class LimeroadStepDefinition extends BaseClass{
-	//public static WebDriver driver=LimeRoadRunner.driver;
+	public static WebDriver driver=LimeRoadRunner.driver;
 	
 	//=LimeRoadRunner.driver;
 	LimeRoadPOM pom= new LimeRoadPOM(driver);
@@ -20,7 +20,7 @@ public class LimeroadStepDefinition extends BaseClass{
 	//Login	
 	@Given("Launch the url {string}")
 	public void launch_the_url(String string) {
-    browserLaunch("Chrome");
+//    browserLaunch("Chrome");
    // implicitWait(10);
 		urlLaunch(string);
 	}
